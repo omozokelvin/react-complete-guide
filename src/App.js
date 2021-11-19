@@ -9,4 +9,6 @@ function App() {
   );
 }
 
+			console.log("  now way")
+
 export default App;
