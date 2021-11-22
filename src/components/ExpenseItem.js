@@ -3,7 +3,7 @@ function ExpenseItem() {
     <div>
       				<div>Date</div>
      			 <h2>title</h2>
-      <div>Amount</div>
+      								<div>Amount</div>
     </div>
   );
 }
