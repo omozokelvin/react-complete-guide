@@ -17,7 +17,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint .",
-    "format": "prettier --write \"**/*.+(ts|js|jsx|json|yml|yaml|css|md|vue)\""
+    "format": "prettier --write \"**/*.+(ts|js|jsx|json|yml|yaml|css|md|vue)\"",
+    "prepare": "husky install",
+    "precommit": "npm run lint && npm run format && git add -A"
   },
   "husky": {
     "hooks": {
