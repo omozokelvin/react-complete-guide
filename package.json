@@ -17,9 +17,16 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint .",
-    "format": "prettier --write \"**/*.+(ts|js|jsx|json|yml|yaml|css|md|vue)\"",
-    "prepare": "husky install",
-    "precommit": "npm run lint && npm run format"
+    "format": "prettier --write \"**/*.+(ts|js|jsx|json|yml|yaml|css|md|vue)\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run format"
+    }
+  },
+  "lint-staged": {
+    "*.+(js|jsx)": "eslint --fix",
+    "*.+(json|css|md)": "prettier --write"
   },
   "browserslist": {
     "production": [
