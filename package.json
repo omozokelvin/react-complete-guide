@@ -19,7 +19,7 @@
     "lint": "eslint .",
     "format": "prettier --write \"**/*.+(ts|js|jsx|json|yml|yaml|css|md|vue)\"",
     "prepare": "husky install",
-    "precommit": "npm run lint && npm run format && git add -A"
+    "precommit": "npm run format && npm run lint && git add -A"
   },
   "lint-staged": {
     "*.+(js|jsx)": "eslint --fix",
