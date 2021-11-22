@@ -1,14 +1,14 @@
-import ExpenseItem from "./components/ExpenseItem";
+import ExpenseItem from './components/ExpenseItem';
 
 function App() {
   return (
     <div>
       <h2>Let's get started!</h2>
-      <ExpenseItem></ExpenseItem>
+      <ExpenseItem />
     </div>
   );
 }
 
-			console.log("  now way")
+console.log('now way');
 
 export default App;
