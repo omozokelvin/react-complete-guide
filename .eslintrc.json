@@ -13,7 +13,7 @@
   },
   "plugins": ["react"],
   "rules": {
-    "jsx-quotes": [2, "prefer-single"],
+    "jsx-quotes": [2, "prefer-double"],
     "quotes": ["error", "single", { "avoidEscape": true }]
   }
 }
