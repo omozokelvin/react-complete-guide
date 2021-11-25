@@ -1,4 +1,5 @@
 import Expenses from 'components/Expenses/Expenses';
+import NewExpense from 'components/NewExpense/NexExpense';
 
 // import React from 'react';
 
@@ -25,6 +26,10 @@ export const App = () => {
     },
   ];
 
+  const addExpenseHandler = (expense) => {
+    console.log('in app.js', expense);
+  };
+
   // old syntax using React.createElement
 
   // return React.createElement(
@@ -37,7 +42,7 @@ export const App = () => {
   // new syntax using jsx
   return (
     <div>
-      <h2>Let's get started!</h2>
+      <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
     </div>
   );
