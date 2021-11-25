@@ -1,6 +1,8 @@
-import Expenses from './components/Expenses';
+import Expenses from 'components/Expenses/Expenses';
 
-function App() {
+// import React from 'react';
+
+export const App = () => {
   const expenses = [
     {
       id: 'e1',
@@ -23,12 +25,22 @@ function App() {
     },
   ];
 
+  // old syntax using React.createElement
+
+  // return React.createElement(
+  //   'div',
+  //   {},
+  //   React.createElement('h2', {}, "Let's get started"),
+  //   React.createElement(Expenses, { items: expenses })
+  // );
+
+  // new syntax using jsx
   return (
     <div>
       <h2>Let's get started!</h2>
       <Expenses items={expenses} />
     </div>
   );
-}
+};
 
 export default App;
